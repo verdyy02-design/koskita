@@ -7,6 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Deploying KosKita
+
+Netlify builds and publishes only the Vite assets in `public/build`. It does not serve the Laravel login, dashboards, or API routes. Deploy the full application to a PHP-capable server with `public` as the document root, and include the generated `public/build` directory in that deployment.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
